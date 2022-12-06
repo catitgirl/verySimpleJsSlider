@@ -1,0 +1,57 @@
+$blueColor: #84B9F0;
+
+@mixin box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	background: $blueColor;
+	padding: 30px;
+}
+
+.container {
+	@include box;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 40px;
+		color: #fff;
+	}
+
+	.active {
+		display: block;
+	}
+
+	img {
+		width: 100%;
+		display: none;
+	}
+
+}
+
+.but-container {
+	@include box;
+	flex-direction: row;
+
+	button {
+		outline: none;
+		cursor: pointer;
+	}
+
+	#prev,
+	#next {
+		justify-items: center;
+		height: 40px;
+		width: 70px;
+		background-color: #049CD7;
+		color: #ffffff;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		border: none;
+		border-radius: 3px;
+		font-size: 18px;
+		font-weight: bolder;
+	}
+}

@@ -14,3 +14,10 @@ function prev() {
     document.getElementById("content" + (i + 1)).classList.add("active");
     indicator(i + 1);
 }
+// окраска дива
+function clickablediv(){
+document.getElementById("div1").style.background="green";
+}
+
+
+

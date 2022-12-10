@@ -19,5 +19,11 @@ function clickablediv(){
 document.getElementById("div1").style.background="green";
 }
 
-
-
+// это обычная функция
+    //let nameCat= prompt ('What is your name?', '')
+   // alert ('Hello ' + nameCat);
+    
+   let nameCat = prompt ('What is your name?', '');
+   () => ('Hello, ' + nameCat);
+ 
+   alert ('Hello ' + nameCat);
